@@ -1,0 +1,13 @@
+#3). Write a program in Python to check given number is prime or not.
+
+n=15
+i=1
+lst=[]
+while i<=n:
+	if n%i == 0:
+		lst.append(i)
+	i = i + 1
+if len(lst)==2:
+	print(str(n) +" number is prime")
+else:
+	print(str(n) + " number is not prime")
