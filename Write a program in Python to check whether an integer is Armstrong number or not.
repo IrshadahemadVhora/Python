@@ -1,0 +1,21 @@
+#2). Write a program in Python to check whether an integer is Armstrong number or not.
+
+n=11111
+i=0
+b=n
+c=n
+result=0
+
+while n!=0:
+	n=n//10
+	i=i+1
+
+while c!=0:
+	d = c % 10
+	result = result + pow(d,i)
+	c = c//10
+    
+if result == b:
+	print("number is armstrong")
+else:
+	print("number is not armstrong")
